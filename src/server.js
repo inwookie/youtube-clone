@@ -20,8 +20,8 @@ const handleHome = (req, res) => {
 app.use(logger);
 app.get("/", handleHome);
 
-// Asking localhost:4000 to listen to what my requests are.
+// Asking localhost port of 4000 to listen to what my requests are.
 const handleListening = () =>
-  console.log(`Server Listening on port http://localhost:${PORT}`);
+  console.log(`✅ Server Listening on port http://localhost:${PORT} 🚀`);
 
 app.listen(PORT, handleListening);
