@@ -15,6 +15,9 @@ const logger = morgan("dev");
 // This creates a page for my server.
 app.use(logger);
 
+app.set("view engine", "pug");
+app.set("views", process.cwd() + "/src/views");
+app.use(logger);
 app.use("/", globalRouter);
 app.use("/videos", videoRouter);
 app.use("/users", userRouter);
